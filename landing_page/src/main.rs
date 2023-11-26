@@ -1,7 +1,9 @@
 use leptos::*;
 
 fn main() {
-    leptos::mount_to_body(|| view! { <Header/> })
+    leptos::mount_to_body(|| view! { <Header/>
+                                     <Section />
+     })
 }
 
 //This is the Main Header of the page
@@ -18,5 +20,31 @@ fn Header() -> impl IntoView {
         <button class="button_style">Trade AMB on firepot</button>
         <button class="button_style">Use AMB Bridge</button>
     </div>
+    }
+}
+
+#[component]
+fn Section() -> impl IntoView {
+    view! {
+        <section class=("main_section")>
+        <div class=("div_section")>
+        <h1>Buy AMB On Binance</h1>
+        <h4>Trade AMB On Binance. The Worlds Largest Cryptocurrency Exchange</h4>
+        <h3>
+        Use AMB Bridge
+        </h3>
+        </div>
+        <div class=("div_section")>
+        <h1>
+        Bridge AMB
+        </h1>
+        <h4>
+        Securely Bridge AMB Between AirDAO And Compatible Blockchains
+        </h4>
+        <h3>
+        Use AMB Bridge
+        </h3>
+        </div>
+        </section>
     }
 }

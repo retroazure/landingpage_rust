@@ -1,8 +1,52 @@
 <!DOCTYPE html><html><head>
-<link rel="preload" href="/landing_page-b540005f0024a416_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/landing_page-b540005f0024a416.js"></head>
-  <body>
-<script type="module">import init from '/landing_page-b540005f0024a416.js';init('/landing_page-b540005f0024a416_bg.wasm');</script><script>(function () {
+<link rel="preload" href="/landing_page-5c9a0e4149992751_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/landing_page-5c9a0e4149992751.js"></head>
+
+<body>
+
+
+
+<style>
+  .main_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_section {
+    display:flex;
+    padding-top: 15rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .div_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button_style:hover {
+    cursor:pointer;
+  }
+
+  .button_style {
+    margin: 10px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    border-width: 0.5px;
+    border-color: white;
+    outline: none;
+    border: 1px solid transparent; 
+  }
+</style><script type="module">import init from '/landing_page-5c9a0e4149992751.js';init('/landing_page-5c9a0e4149992751_bg.wasm');</script><script>(function () {
     var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
