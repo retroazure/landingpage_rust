@@ -1,12 +1,33 @@
 <!DOCTYPE html><html><head>
-<link rel="preload" href="/landing_page-5c9a0e4149992751_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/landing_page-5c9a0e4149992751.js"></head>
+<link rel="preload" href="/landing_page-75eab15df8a6dc3f_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/landing_page-75eab15df8a6dc3f.js"></head>
 
 <body>
 
 
 
 <style>
+  a {
+    text-decoration: none;
+    color:black;
+  }
+
+  .nav_div {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .navbar {
+    display:flex;
+    align-items: center;
+  }
+
+  .navbar > li {
+    list-style-type:none;
+    padding-right: 3rem;
+  }
+
   .main_header {
     display: flex;
     flex-direction: column;
@@ -46,7 +67,24 @@
     outline: none;
     border: 1px solid transparent; 
   }
-</style><script type="module">import init from '/landing_page-5c9a0e4149992751.js';init('/landing_page-5c9a0e4149992751_bg.wasm');</script><script>(function () {
+
+  .button_navbar {
+    background-color:blue;
+    color:white;
+    margin: 10px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 30px;
+    border-width: 0.5px;
+    border-color: white;
+    outline: none;
+    border: 1px solid transparent; 
+    height: 50px;
+  }
+
+  .button_navbar:hover {
+    cursor:pointer;
+  }
+</style><script type="module">import init from '/landing_page-75eab15df8a6dc3f.js';init('/landing_page-75eab15df8a6dc3f_bg.wasm');</script><script>(function () {
     var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
