@@ -1,8 +1,139 @@
 <!DOCTYPE html><html><head>
-<link rel="preload" href="/landing_page-b540005f0024a416_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/landing_page-b540005f0024a416.js"></head>
-  <body>
-<script type="module">import init from '/landing_page-b540005f0024a416.js';init('/landing_page-b540005f0024a416_bg.wasm');</script><script>(function () {
+<link rel="preload" href="/landing_page-324d117b5bce2c36_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/landing_page-324d117b5bce2c36.js"></head>
+
+<body>
+
+
+
+<style>
+  a {
+    text-decoration: none;
+    color:black;
+  }
+
+  .nav_div {
+    display:flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+  }
+
+  .navbar {
+    display:flex;
+    align-items: center;
+  }
+
+  .navbar > li {
+    list-style-type:none;
+    padding-right: 3rem;
+  }
+
+  .main_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main_section {
+    display:flex;
+    padding-top: 15rem;
+    padding-bottom: 15rem;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .div_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .button_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .button_style:hover {
+    cursor:pointer;
+  }
+
+  .button_style {
+    margin: 10px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    border-width: 0.5px;
+    border-color: white;
+    outline: none;
+    border: 1px solid transparent; 
+  }
+
+  .button_navbar {
+    background-color:blue;
+    color:white;
+    margin: 10px;
+    padding: 5px 25px 5px 25px;
+    border-radius: 2em;
+    border-width: 0.5px;
+    border-color: white;
+    border: 1px solid transparent; 
+    outline: none;
+    height: 40px;
+  }
+
+  .button_navbar:hover {
+    cursor:pointer;
+  }
+
+  .second_section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container_section {
+    display: flex;
+    align-items: center;
+  }
+
+  .container_buttons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+  }
+
+  .button_style_2 {
+    background-color:blueviolet;
+    color:white;
+    margin: 10px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    border-width: 0.5px;
+    border-color: white;
+    outline: none;
+    border: 1px solid transparent; 
+  }
+
+  .button_style_2:hover {
+    cursor:pointer;
+  }
+
+  .big_title {
+    font-size: 3rem;
+  }
+
+  .box_section {
+    display: flex;
+    flex-direction: row;
+    margin: 20rem;
+  }
+
+  .section_headers {
+    margin-bottom: 15rem;
+  }
+
+</style><script type="module">import init from '/landing_page-324d117b5bce2c36.js';init('/landing_page-324d117b5bce2c36_bg.wasm');</script><script>(function () {
     var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;
