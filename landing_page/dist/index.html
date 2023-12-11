@@ -1,6 +1,6 @@
 <!DOCTYPE html><html><head>
-<link rel="preload" href="/landing_page-324d117b5bce2c36_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
-<link rel="modulepreload" href="/landing_page-324d117b5bce2c36.js"></head>
+<link rel="preload" href="/landing_page-f07b7a7d9bbaddb9_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/landing_page-f07b7a7d9bbaddb9.js"></head>
 
 <body>
 
@@ -119,6 +119,23 @@
     cursor:pointer;
   }
 
+  .button_style_3 {
+    background-color:blueviolet;
+    color:white;
+    margin: 10px;
+    margin-left:7rem;
+    padding: 15px 30px 15px 30px;
+    border-radius: 30px;
+    border-width: 0.5px;
+    border-color: white;
+    outline: none;
+    border: 1px solid transparent; 
+  }
+
+  .button_style_3:hover {
+    cursor:pointer;
+  }
+
   .big_title {
     font-size: 3rem;
   }
@@ -133,7 +150,70 @@
     margin-bottom: 15rem;
   }
 
-</style><script type="module">import init from '/landing_page-324d117b5bce2c36.js';init('/landing_page-324d117b5bce2c36_bg.wasm');</script><script>(function () {
+  .stake_row {
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 10.5rem;
+    margin-bottom: 15rem;
+  }
+
+  .button_flex {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+
+  .section_wrapper {
+    display: flex;
+    flex-direction: row;
+    gap:2rem;
+  }
+
+  .section_wrapper_2 {
+    display: flex;
+    flex-direction: row;
+    gap:6rem;
+  }
+
+  .title_div {
+    display:flex;
+    flex-direction: row;
+    width: 25%;
+    justify-content: flex-start;
+    margin-bottom: 240px;
+  }
+
+  .validator-div {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+
+  .validator-div-2 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+  }
+
+  .validator-div-3 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 15rem;
+  }
+
+  .secondary-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+</style><script type="module">import init from '/landing_page-f07b7a7d9bbaddb9.js';init('/landing_page-f07b7a7d9bbaddb9_bg.wasm');</script><script>(function () {
     var protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
     var url = protocol + '//' + window.location.host + '/_trunk/ws';
     var poll_interval = 5000;

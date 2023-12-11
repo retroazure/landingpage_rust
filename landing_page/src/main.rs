@@ -7,6 +7,8 @@ fn main() {
            <Header/>
            <Section />
            <SecondSection />
+           <StakeSection />
+           <ValidatorSection />
         }
     })
 }
@@ -81,7 +83,6 @@ fn Navbar() -> impl IntoView {
     }
 }
 
-
 #[component]
 fn SecondSection() -> impl IntoView {
     view! {
@@ -103,7 +104,7 @@ fn SecondSection() -> impl IntoView {
         </div>
         <div>
         <h1 class=("section_headers")>Binance</h1>
-        <p>Binance Has Its Own Native Utility Token Called WBTC. 
+        <p>Binance Has Its Own Native Utility Token Called WBTC.
         Holders Of WBTC May Enjoy Certain</p>
         </div>
         <div>
@@ -112,10 +113,89 @@ fn SecondSection() -> impl IntoView {
         </div>
         <div>
         <h1 class=("section_headers")>WhiteBIT</h1>
-        <p>WhiteBit Has Its Own Native Utility Token Called WBTC. 
+        <p>WhiteBit Has Its Own Native Utility Token Called WBTC.
         Holders Of WBTC May Enjoy Certain</p>
         </div>
         </div>
     </section>
+    }
+}
+
+#[component]
+fn StakeSection() -> impl IntoView {
+    view! {
+    <section>
+        <div class=("stake_row")>
+            <div class=("title_div")>
+            <h1 class=("big_title")>Stake AMB</h1>
+            </div>
+            <div class=("element_wrapper")>
+            <div class=("button_flex")>
+            <p>Buy An Trade AMB And Other Crypto With Firepot Swap AirDAOs Native Decentralized Exchange</p>
+            <button class=("button_style_3")>Start Earning</button>
+            </div>
+            <div class=("section_wrapper")>
+            <div>
+            <h3>Starting At 1000 AMB</h3>
+            <p>Blockchain Networks Offer Rewards To Users Who Lock Up Their Tokens In A Process Called Staking</p>
+            </div>
+            <div>
+            <h3>No Technical Expertise Needed</h3>
+            <p>Technical Expertise Typically Begins With A Strong Foundation Of Knowledge In A Particular Field</p>
+            </div>
+            </div>
+            <div class=("section_wrapper_2")>
+            <div>
+            <h3>Unstake At Any Time</h3>
+            <p>Taking Involves Locking Up Your Cryptocurrency Assets. Typically In A Smart Contract As Collateral To Support the Ope...</p>
+            </div>
+            <div>
+            <h3>Receive Rewards Every 6 Hours</h3>
+            <p>No Proof Of Work Blockchain Networks Like Bitcoin Miners Use Computational Power to Solve Complex Mathematical Problems An...</p>
+            </div>
+            </div>
+            </div>
+
+        </div>
+    </section>
+    }
+}
+
+#[component]
+
+fn ValidatorSection() -> impl IntoView {
+    view! {
+        <section>
+        <div class=("validator-div")>
+        <h1>Become A Validator</h1>
+        <p>
+        Buy and Trade AMB And Other Crypto With Firepot Swap AirDAOs Native Decentralized Exchange
+        </p>
+        </div>
+        <div class=("validator-div-2")>
+        <div>
+        <h1 class=("secondary-title")>15,000+</h1>
+        <h2>Total AMB Holders</h2>
+        </div>
+        <div>
+        <h1 class=("secondary-title")>500+</h1>
+        <h2>Total AMB Holders</h2>
+        </div>
+        </div>
+        <div class=("validator-div-3")>
+        <div>
+        <h3>Roadmap</h3>
+        <p>"Discover What's Coming To AirDao In 2023 And Beyond"</p>
+        </div>
+        <div>
+        <h3>Ambassador Program</h3>
+        <p>"Discover What's Coming To AirDao In 2023 And Beyond"</p>
+        </div>
+        <div>
+        <h3>AirDAO Network</h3>
+        <p>"Discover What's Coming To AirDao In 2023 And Beyond"</p>
+        </div>
+        </div>
+        </section>
     }
 }
